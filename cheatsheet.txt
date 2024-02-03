@@ -1,0 +1,82 @@
+
+Basic Commands:
+
+1. Initialization:
+   - `git init`: Initializes a new Git repository in the current directory.
+     Example: `git init`
+
+2. Cloning:
+   - `git clone <repository-url>`: Copies a remote repository onto your local machine.
+     Example: `git clone https://github.com/username/repository`
+
+3. Adding and Committing:
+   - `git add <file>`: Adds changes in `<file>` to the staging area.
+     Example: `git add index.html`
+   - `git commit -m "Commit message"`: Records changes in the repository with a message.
+     Example: `git commit -m "Added index.html"`
+
+4. Branches:
+   - `git branch`: Lists all branches in the repository.
+     Example: `git branch`
+   - `git branch <branch-name>`: Creates a new branch.
+     Example: `git branch feature-branch`
+   - `git checkout <branch-name>`: Switches to a different branch.
+     Example: `git checkout feature-branch`
+
+5. Viewing Changes:
+   - `git status`: Shows the status of the working directory and staging area.
+     Example: `git status`
+   - `git diff`: Shows changes between the working directory and staging area.
+     Example: `git diff`
+
+6. Merging and Rebasing:
+   - `git merge <branch-name>`: Integrates changes from `<branch-name>` into the current branch.
+     Example: `git merge feature-branch`
+   - `git rebase <branch-name>`: Applies changes from the current branch on top of `<branch-name>`.
+     Example: `git rebase master`
+
+7. Remote Repositories:
+   - `git remote add origin <repository-url>`: Sets up a new remote repository.
+     Example: `git remote add origin https://github.com/username/repository`
+   - `git push -u origin <branch-name>`: Pushes commits to a remote repository.
+     Example: `git push -u origin main`
+   - `git pull origin <branch-name>`: Fetches and merges changes from a remote repository.
+     Example: `git pull origin main`
+
+8. Undoing Changes:
+   - `git reset <file>`: Unstages changes in `<file>`.
+     Example: `git reset index.html`
+   - `git checkout -- <file>`: Discards changes in `<file>`.
+     Example: `git checkout -- index.html`
+
+9. Removing Files:
+   - `git rm <file>`: Removes a file from the repository and staging area.
+     Example: `git rm unwanted_file.txt`
+
+10. Tagging:
+    - `git tag <tag-name>`: Creates a lightweight tag at the current commit.
+      Example: `git tag v1.0.0`
+
+ GitHub Specific Commands:
+
+1. Forking and Cloning:
+   - `git clone <repository-url>`: Clones a repository from GitHub onto your local machine.
+     Example: `git clone https://github.com/username/repository`
+   - `git fork`: Creates a fork of a repository on GitHub.
+
+2. Pull Requests:
+   - `git pull-request`: Opens a pull request on GitHub.
+
+3. Managing Remotes:
+   - `git remote add upstream <upstream-url>`: Adds the original repository as an upstream remote.
+     Example: `git remote add upstream https://github.com/original/repository`
+   - `git fetch upstream`: Fetches changes from the upstream repository.
+
+4. Workflow:
+   - `git checkout -b <branch-name>`: Creates a new branch and switches to it.
+     Example: `git checkout -b feature-branch`
+   - `git rebase <branch-name>`: Reapplies commits from the current branch on top of `<branch-name>`.
+     Example: `git rebase main`
+
+5. GitHub Pages:
+   - `git checkout gh-pages`: Switches to the `gh-pages` branch for GitHub Pages deployment.
